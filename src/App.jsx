@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="text-[#FFFCF2] text-lg w-full min-h-screen flex flex-col">
       <section className="px-16 py-8 not-md:p-8 border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-4 flex items-center justify-between grow-1">
-        <div className="max-w-2/3">
+        <div className="max-w-3/4">
           <p className="font-bold">{t.name}</p>
           <p className="text-[#CCC5B9]">{t.role}</p>
         </div>
