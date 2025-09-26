@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="text-[#FFFCF2] text-lg w-full min-h-screen flex flex-col">
-      <section className="px-16 py-8 not-md:p-8 border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-8 flex items-center justify-between grow-1">
+      <section className="px-16 py-8 not-md:p-8 border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-4 flex items-center justify-between grow-1">
         <div className="max-w-2/3">
           <p className="font-bold">{t.name}</p>
           <p className="text-[#CCC5B9]">{t.role}</p>
@@ -55,7 +55,7 @@ function App() {
 
       <div className="w-full h-[1px] bg-[#FFFCF233]"></div>
 
-      <section className="px-16 not-md:px-8 py-24 not-md:py-8 border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-8 grow-2 flex flex-col justify-center">
+      <section className="px-16 py-24 not-md:p-8 border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col justify-center">
         <p
           className={`leading-8 transition-opacity duration-300 ${textDarkened}`}
         >
@@ -78,7 +78,7 @@ function App() {
             onMouseOver={darkenText}
             onMouseOut={clarifyText}
             className={cn(
-              'transition-opacity duration-300 not-md:underline',
+              'transition-opacity duration-300 not-md:underline underline-offset-4',
               currentLinkHovering === 'LinkedIn' ? '' : textDarkened
             )}
           >
@@ -95,7 +95,7 @@ function App() {
             onMouseOver={darkenText}
             onMouseOut={clarifyText}
             className={cn(
-              'transition-opacity duration-300 not-md:underline',
+              'transition-opacity duration-300 not-md:underline underline-offset-4',
               currentLinkHovering === 'GitHub' ? '' : textDarkened
             )}
           >
@@ -111,7 +111,7 @@ function App() {
 
       <div className="w-full h-[1px] bg-[#FFFCF233]"></div>
 
-      <section className="border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-8 grow-1 flex justify-center items-center">
+      <section className="border-x-[1px] border-[#FFFCF233] mx-16 not-md:mx-4 grow-1 flex justify-center items-center">
         <img
           src="/sign.svg"
           alt="Gabriel Dias Mendonça sign"
