@@ -12,6 +12,48 @@ export const translations = {
       },
       projects: {
         title: 'Projects',
+        items: [
+          {
+            title: 'SkinSpin',
+            slug: 'skinspin',
+            description:
+              'Open boxes of CS skins, spin the wheel and simulate the creation of your dream inventory.',
+            stack: [
+              'Next.js',
+              'Node.js',
+              'TypeScript',
+              'Framer Motion',
+              'Stripe',
+            ],
+            links: { web: 'https://skinspin.vercel.app/', github: '' },
+            inDevelopment: false,
+          },
+          {
+            title: 'Gameroll',
+            slug: 'gameroll',
+            description:
+              'Gameroll is your social network for games. Create a diary with the games you played, rate, write critiques and discover your next favorite game with the community’s recommendations.',
+            stack: ['React Native', 'Node.js', 'TypeScript', 'Stripe'],
+            links: {
+              dribbble:
+                'https://dribbble.com/shots/22829842-Review-form-Gameroll',
+            },
+            inDevelopment: true,
+          },
+          {
+            title: 'movs',
+            slug: 'movs',
+            description:
+              'Register your favorite movies and follow the ratings of your friends.',
+            stack: ['React', 'Node.js', 'TypeScript', 'GraphQL'],
+            links: {
+              dribbble:
+                'https://dribbble.com/shots/18466798-movs-Cinema-application',
+              github: '',
+            },
+            inDevelopment: false,
+          },
+        ],
       },
       writings: {
         title: 'Writings',
@@ -53,6 +95,48 @@ export const translations = {
       },
       projects: {
         title: 'Projetos',
+        items: [
+          {
+            title: 'SkinSpin',
+            slug: 'skinspin',
+            description:
+              'Abra caixas de skins de CS, gire a roleta e simule a criação do seu inventário dos sonhos.',
+            stack: [
+              'Next.js',
+              'Node.js',
+              'TypeScript',
+              'Framer Motion',
+              'Stripe',
+            ],
+            links: { web: 'https://skinspin.vercel.app/', github: '' },
+            inDevelopment: false,
+          },
+          {
+            title: 'Gameroll',
+            slug: 'gameroll',
+            description:
+              'Gameroll é a sua rede social para games. Crie um diário com os jogos que você jogou, avalie, escreva críticas e descubra seu próximo jogo favorito com base nas recomendações da comunidade.',
+            stack: ['React Native', 'Node.js', 'TypeScript', 'Stripe'],
+            links: {
+              dribbble:
+                'https://dribbble.com/shots/22829842-Review-form-Gameroll',
+            },
+            inDevelopment: true,
+          },
+          {
+            title: 'movs',
+            slug: 'movs',
+            description:
+              'Registre seus filmes favoritos e acompanhe as avaliações dos seus amigos.',
+            stack: ['React', 'Node.js', 'TypeScript', 'GraphQL'],
+            links: {
+              dribbble:
+                'https://dribbble.com/shots/18466798-movs-Cinema-application',
+              github: '',
+            },
+            inDevelopment: false,
+          },
+        ],
       },
       writings: {
         title: 'Artigos',

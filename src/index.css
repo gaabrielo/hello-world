@@ -78,6 +78,34 @@ button {
     "YTLC" <lowercase height>; */
 }
 
+.animate-gradient {
+  /* animation: animate-gradient 2.2s ease infinite alternate; */
+  background-image: linear-gradient(
+    -61deg,
+    rgba(220, 220, 220, 0.05) 40%,
+    rgba(242, 242, 242, 0.2) 50%,
+    rgba(44, 44, 44, 0.05) 60%
+  );
+  background-size: 300% 300%;
+  background-position: 100% 50%;
+}
+
+.animate-gradient:hover {
+  animation: animate-gradient 3s ease infinite alternate;
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  20% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
