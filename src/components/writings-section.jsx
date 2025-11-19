@@ -29,7 +29,7 @@ export function WritingsSection({ translation: t }) {
             target="_blank"
             onMouseOver={() => darkenText(article.redirectTo)}
             onMouseOut={clarifyText}
-            className="cursor-pointer"
+            className="group cursor-pointer"
           >
             <div
               className={cn(
@@ -40,21 +40,20 @@ export function WritingsSection({ translation: t }) {
               {/* Tags */}
               <div className="flex max-md:flex-col gap-1">
                 {article.tags.map((tag) => (
-                  <span className="text-sm! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900">
+                  <span className="text-sm! not-md:text-xs! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900">
                     {tag}
                   </span>
                 ))}
               </div>
 
               {/* Title */}
-              <div className="grid grid-cols-3 gap-1.5">
-                <p className="capitalize! font-vend-sans pl-2.5 col-span-2">
+              <div className="grid grid-cols-4 gap-1.5">
+                <p className="capitalize! font-vend-sans pl-2.5 col-span-3">
                   {article.title.toLowerCase()}
                 </p>
                 <IconArrowUpRight
-                  color={'#fffcf2'}
                   size={20}
-                  className="col-span-1 ml-auto mr-0 self-end"
+                  className="col-span-1 ml-auto mr-0 self-end text-[#CCC5B9] group-hover:text-gray-50 transition-all duration-300"
                 />
               </div>
             </div>
