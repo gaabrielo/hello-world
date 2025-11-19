@@ -59,11 +59,12 @@ function App() {
       <Divider />
 
       <footer className="border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow flex justify-center items-center">
-        <img
+        {/* <img
           src="/sign.svg"
           alt="Gabriel Dias Mendonça sign"
           className="w-40 py-8"
-        />
+        /> */}
+        <div class="w-full my-8 max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign"></div>
       </footer>
     </div>
   );

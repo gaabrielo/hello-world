@@ -78,6 +78,18 @@ button {
     "YTLC" <lowercase height>; */
 }
 
+@keyframes animate-gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  20% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
 .animate-gradient {
   /* animation: animate-gradient 2.2s ease infinite alternate; */
   background-image: linear-gradient(
@@ -94,16 +106,16 @@ button {
   animation: animate-gradient 3s ease infinite alternate;
 }
 
-@keyframes animate-gradient {
-  0% {
-    background-position: 100% 50%;
-  }
-  20% {
-    background-position: 100% 50%;
-  }
-  to {
-    background-position: 0 50%;
-  }
+.animate-sign {
+  animation: animate-gradient 3s ease infinite alternate;
+  background-image: linear-gradient(
+    -61deg,
+    rgba(220, 220, 220, 0.15) 40%,
+    rgba(242, 242, 242, 0.3) 50%,
+    rgba(220, 220, 220, 0.15) 60%
+  );
+  background-size: 300% 300%;
+  background-position: 100% 50%;
 }
 
 /* button {
