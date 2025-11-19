@@ -63,7 +63,7 @@ export const translations = {
               'Development of an Interdisciplinary Gamified Virtual Learning Environment',
             tags: [
               'Brazilian Symposium on Informatics in Education',
-              'Philosophy Of Science',
+              'Philosophy of Science',
             ],
             redirectTo:
               'https://www.researchgate.net/publication/386258851_Desenvolvimento_de_um_Ambiente_Virtual_de_Aprendizagem_Gamificado_Interdisciplinar',
@@ -84,7 +84,7 @@ export const translations = {
   },
   pt: {
     name: 'Gabriel Dias Mendonça',
-    role: 'Dev Full-Stack | Node | Next.js | React Native',
+    role: 'Desenvolvedor Full-Stack',
     sections: {
       about: {
         title: 'Sobre mim',
@@ -146,7 +146,7 @@ export const translations = {
               'Desenvolvimento de um Ambiente Virtual de Aprendizagem Gamificado Interdisciplinar',
             tags: [
               'Simpósio Brasileiro de Informática na Educação',
-              'Filosofia da ciência',
+              'Filosofia da Ciência',
             ],
             redirectTo:
               'https://www.researchgate.net/publication/386258851_Desenvolvimento_de_um_Ambiente_Virtual_de_Aprendizagem_Gamificado_Interdisciplinar',

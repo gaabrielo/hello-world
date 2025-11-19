@@ -19,7 +19,9 @@ export function WritingsSection({ translation: t }) {
 
   return (
     <section>
-      <SectionHeader>{t.sections.writings.title}</SectionHeader>
+      <div className="px-16 not-md:px-8">
+        <SectionHeader>2. {t.sections.writings.title}</SectionHeader>
+      </div>
 
       <div className="flex flex-col gap-6">
         {t.sections.writings.articles.map((article) => (
@@ -33,7 +35,7 @@ export function WritingsSection({ translation: t }) {
           >
             <div
               className={cn(
-                'border-b border-[#FFFCF233] pb-2 transition-all duration-300 flex flex-col gap-1',
+                'border-b border-[#FFFCF233] pb-2 transition-all duration-300 flex flex-col gap-1 ml-16 not-md:ml-8 pr-16 not-md:pr-8',
                 currentLinkHovering !== article.redirectTo && textDarkened
               )}
             >

@@ -11,8 +11,8 @@ const imagePath = {
 
 export function ProjectsSection({ translation: t }) {
   return (
-    <section>
-      <SectionHeader>{t.sections.projects.title}</SectionHeader>
+    <section className="px-16 not-md:px-8">
+      <SectionHeader>3. {t.sections.projects.title}</SectionHeader>
       <div className="grid grid-cols-3 not-md:grid-cols-1 gap-6">
         {t.sections.projects.items.map((item) => (
           <button className="w-full bg-neutral-900 aspect-video rounded-4xl not-md:rounded-xl col-span-1 overflow-hidden group relative border border-[#FFFCF233]">
