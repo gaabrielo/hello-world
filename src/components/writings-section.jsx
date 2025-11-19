@@ -37,18 +37,25 @@ export function WritingsSection({ translation: t }) {
                 currentLinkHovering !== article.redirectTo && textDarkened
               )}
             >
-              <div className="flex gap-0 items-center">
-                <p className="capitalize! font-vend-sans px-2.5">
-                  {article.title.toLowerCase()}
-                </p>
-                <IconArrowUpRight color={'#fffcf2'} size={20} />
-              </div>
-              <div className="flex gap-1">
+              {/* Tags */}
+              <div className="flex max-md:flex-col gap-1">
                 {article.tags.map((tag) => (
-                  <span className="text-sm! text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900">
+                  <span className="text-sm! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900">
                     {tag}
                   </span>
                 ))}
+              </div>
+
+              {/* Title */}
+              <div className="grid grid-cols-3 gap-1.5">
+                <p className="capitalize! font-vend-sans pl-2.5 col-span-2">
+                  {article.title.toLowerCase()}
+                </p>
+                <IconArrowUpRight
+                  color={'#fffcf2'}
+                  size={20}
+                  className="col-span-1 ml-auto mr-0 self-end"
+                />
               </div>
             </div>
           </a>

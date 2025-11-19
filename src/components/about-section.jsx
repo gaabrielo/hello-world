@@ -20,8 +20,6 @@ export function AboutSection({ translation: t }) {
   };
 
   return (
-    // <section className="px-16 py-24 not-md:p-8 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col justify-center">
-
     <section>
       <SectionHeader>{t.sections.about.title}</SectionHeader>
 

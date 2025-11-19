@@ -47,12 +47,12 @@ function App() {
 
       <Divider />
 
-      <section className="px-16 py-24 not-md:p-8 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center">
+      <section className="px-16 py-16 not-md:px-8 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center">
         <AboutSection translation={t} />
 
         <WritingsSection translation={t} />
 
-        {/* <ProjectsSection translation={t} /> */}
+        <ProjectsSection translation={t} />
       </section>
 
       <Divider />
