@@ -5,6 +5,7 @@ import { AboutSection } from './components/about-section';
 import { WritingsSection } from './components/writings-section';
 import { Divider } from './components/divider';
 import { ProjectsSection } from './components/projects-section';
+import { CreativeCommons } from './components/cc';
 
 function App() {
   const [language, setLanguage] = useState('en'); // "en" ou "pt"
@@ -58,13 +59,15 @@ function App() {
 
       <Divider />
 
-      <footer className="border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow flex justify-center items-center">
+      <footer className="border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow flex flex-col items-center p-8">
         {/* <img
           src="/sign.svg"
           alt="Gabriel Dias Mendonça sign"
           className="w-40 py-8"
         /> */}
-        <div class="w-full my-8 max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign"></div>
+        <div class="w-full max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign"></div>
+
+        {/* <CreativeCommons /> */}
       </footer>
     </div>
   );

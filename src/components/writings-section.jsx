@@ -42,7 +42,10 @@ export function WritingsSection({ translation: t }) {
               {/* Tags */}
               <div className="flex max-md:flex-col gap-1">
                 {article.tags.map((tag) => (
-                  <span className="text-sm! not-md:text-xs! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900">
+                  <span
+                    key={tag}
+                    className="text-sm! not-md:text-xs! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900"
+                  >
                     {tag}
                   </span>
                 ))}

@@ -14,6 +14,15 @@ export const translations = {
         title: 'Projects',
         items: [
           {
+            title: 'Reads — Online EPUB Reader',
+            slug: 'epubreads',
+            description:
+              'Read .epub files directly in your browser. Create your personal library, customize your reading experience and continue where you left off. Simple and fast.',
+            stack: ['Next.js', 'TypeScript', 'IndexedDB'],
+            links: { web: 'https://epub-reads.vercel.app/', github: '' },
+            inDevelopment: true,
+          },
+          {
             title: 'SkinSpin',
             slug: 'skinspin',
             description:
@@ -96,6 +105,15 @@ export const translations = {
       projects: {
         title: 'Projetos',
         items: [
+          {
+            title: 'Reads — Leitor de EPUB online',
+            slug: 'epubreads',
+            description:
+              'Leia arquivos .epub diretamente no seu navegador. Crie sua biblioteca pessoal, customize sua leitura e continue de onde parou. Simples e rápido.',
+            stack: ['Next.js', 'TypeScript', 'IndexedDB'],
+            links: { web: 'https://epub-reads.vercel.app/', github: '' },
+            inDevelopment: true,
+          },
           {
             title: 'SkinSpin',
             slug: 'skinspin',
