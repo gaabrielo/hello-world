@@ -1,4 +1,4 @@
-import { SectionHeader } from './section-header';
+import { SectionHeader } from './ui/section-header';
 import ImageGameroll from '../assets/gameroll.webp';
 import ImageSkinSpin from '../assets/skinspin.png';
 import ImageMovs from '../assets/movs.webp';

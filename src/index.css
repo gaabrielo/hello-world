@@ -6,7 +6,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
   color: #fffcf2;
   background-color: #252422;
 
@@ -14,27 +13,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* background-color: #fff;
-  opacity: 1;
-  background-size: 80px 80px;
-  background-image: repeating-linear-gradient(
-    to right,
-    #444cf7,
-    #444cf7 1px,
-    #fff 0px,
-    #fff
-  ); */
 }
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.bg-foreground {
+  background-color: #171717;
 }
-a:hover {
-  color: #535bf2;
-} */
 
 * {
   font-family: 'Nunito Sans', sans-serif;
@@ -43,14 +26,9 @@ a:hover {
 
 body {
   margin: 0;
-  /* display: ; */
-  /* place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
   width: 100vw;
   height: 100vh;
   background-color: #252422;
-  /* padding: 0 4rem 0 4rem; */
 }
 
 h1 {
@@ -90,6 +68,15 @@ button {
   }
 }
 
+.glass-element {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fffcf2;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* ANIMATIONS */
 .animate-gradient {
   /* animation: animate-gradient 2.2s ease infinite alternate; */
   background-image: linear-gradient(

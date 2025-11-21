@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { cn } from '../utils/cn';
-import { SectionHeader } from './section-header';
+import { SectionHeader } from './ui/section-header';
 import { IconCircleArrowUpRight, IconArrowUpRight } from '@tabler/icons-react';
 
 export function WritingsSection({ translation: t }) {

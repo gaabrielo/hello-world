@@ -3,9 +3,9 @@ import { cn } from './utils/cn';
 import { translations } from './i18n';
 import { AboutSection } from './components/about-section';
 import { WritingsSection } from './components/writings-section';
-import { Divider } from './components/divider';
+import { Divider } from './components/ui/divider';
 import { ProjectsSection } from './components/projects-section';
-import { CreativeCommons } from './components/cc';
+import { DockWidget } from './components/dock';
 
 function App() {
   const [language, setLanguage] = useState('en'); // "en" ou "pt"
@@ -13,6 +13,8 @@ function App() {
 
   return (
     <div className="text-lg w-full min-h-screen flex flex-col">
+      <DockWidget />
+
       <header className="px-16 py-8 not-md:p-8 border-x border-[#FFFCF233] mx-16 not-md:mx-4 flex items-center justify-between grow">
         <div className="max-w-3/4">
           <p className="font-bold! font-vend-sans">{t.name}</p>
@@ -59,13 +61,13 @@ function App() {
 
       <Divider />
 
-      <footer className="border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow flex flex-col items-center p-8">
+      <footer className="border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow flex flex-col items-center p-8 pb-20">
         {/* <img
           src="/sign.svg"
           alt="Gabriel Dias Mendonça sign"
           className="w-40 py-8"
         /> */}
-        <div class="w-full max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign"></div>
+        <div className="w-full max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign"></div>
 
         {/* <CreativeCommons /> */}
       </footer>
