@@ -1,6 +1,6 @@
-export function CreativeCommons() {
+export function CreativeCommons({ className }) {
   return (
-    <span style={{ color: 'rgba(255,255,255, 0.2)' }}>
+    <span className={className} style={{ color: 'rgba(255,255,255, 0.2)' }}>
       <a href="https://gabrielo.xyz">Portfolio</a> © 2025 by{' '}
       <a href="https://www.linkedin.com/in/gaabrielo/" target="_blank">
         Gabriel Dias Mendonça

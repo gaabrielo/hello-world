@@ -20,7 +20,7 @@ export function WritingsSection({ translation: t }) {
   return (
     <section>
       <div className="px-16 not-md:px-8">
-        <SectionHeader>2. {t.sections.writings.title}</SectionHeader>
+        <SectionHeader>{t.sections.writings.title}</SectionHeader>
       </div>
 
       <div className="flex flex-col gap-6">

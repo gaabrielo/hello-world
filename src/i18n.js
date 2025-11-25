@@ -50,6 +50,18 @@ export const translations = {
             inDevelopment: true,
           },
           {
+            title: 'Astro Burger - Digital Menu',
+            slug: 'astro',
+            description:
+              'Digital menu for a burger restaurant. Focused on mobile experience.',
+            stack: ['React', 'Node.js', 'TypeScript', 'Supabase'],
+            links: {
+              web: 'https://burgerastro.vercel.app/',
+              github: '',
+            },
+            inDevelopment: false,
+          },
+          {
             title: 'movs',
             slug: 'movs',
             description:
@@ -140,6 +152,18 @@ export const translations = {
                 'https://dribbble.com/shots/22829842-Review-form-Gameroll',
             },
             inDevelopment: true,
+          },
+          {
+            title: 'Astro Burger - Cardápio Digital',
+            slug: 'astro',
+            description:
+              'Cardápio digital de hamburgueria. Com foco na experiência mobile.',
+            stack: ['React', 'Node.js', 'TypeScript', 'Supabase'],
+            links: {
+              web: 'https://burgerastro.vercel.app/',
+              github: '',
+            },
+            inDevelopment: false,
           },
           {
             title: 'movs',

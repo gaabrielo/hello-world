@@ -21,7 +21,7 @@ export function AboutSection({ translation: t }) {
 
   return (
     <section className="px-16 not-md:px-8">
-      <SectionHeader>1. {t.sections.about.title}</SectionHeader>
+      <SectionHeader>{t.sections.about.title}</SectionHeader>
 
       <p
         className={`leading-7 transition-opacity duration-300 ${textDarkened}`}
