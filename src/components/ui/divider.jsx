@@ -1,3 +1,5 @@
-export function Divider() {
-  return <div className="w-full h-px bg-[#FFFCF233]"></div>;
+import { cn } from '../../utils/cn';
+
+export function Divider({ className }) {
+  return <div className={cn('w-full h-px bg-[#FFFCF233]', className)}></div>;
 }

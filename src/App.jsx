@@ -9,13 +9,18 @@ import { DockWidget } from './components/dock';
 import { CreativeCommons } from './components/cc';
 import { StackSection } from './components/stack-section';
 
-function SectionContainer({ children }) {
+function SectionContainer({ children, className }) {
   return (
     <>
-      <section className="py-16 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center">
+      <section
+        className={cn(
+          'py-16 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center',
+          className
+        )}
+      >
         {children}
       </section>
-      <Divider />
+      {/* <Divider /> */}
     </>
   );
 }
@@ -28,7 +33,7 @@ function App() {
     <div className="text-lg w-full min-h-screen flex flex-col">
       <DockWidget />
 
-      <header className="px-16 py-8 not-md:p-8 border-x border-[#FFFCF233] mx-16 not-md:mx-4 flex items-center justify-between grow">
+      <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow">
         <div className="max-w-3/4">
           <p className="font-bold! font-vend-sans">{t.name}</p>
           <p className="text-[#CCC5B9] leading-4 font-vend-sans">{t.role}</p>
@@ -63,7 +68,7 @@ function App() {
 
       {/* <section className="px-16 py-16 not-md:px-8 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center"> */}
       <Divider />
-      <SectionContainer>
+      <SectionContainer className="pt-28">
         <AboutSection translation={t} />
       </SectionContainer>
 
@@ -71,7 +76,7 @@ function App() {
         <WritingsSection translation={t} />
       </SectionContainer>
 
-      <SectionContainer>
+      <SectionContainer className="pb-28">
         <ProjectsSection translation={t} />
       </SectionContainer>
 
@@ -79,9 +84,11 @@ function App() {
         <StackSection translation={t} />
       </SectionContainer> */}
 
-      <footer className="px-16 py-8 not-md:p-8 border-x border-[#FFFCF233] mx-16 not-md:mx-4 flex flex-col gap-10 grow">
-        <div className="w-full max-w-40 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto"></div>
-        <CreativeCommons className="mr-0 ml-auto" />
+      <Divider />
+
+      {/* <footer className="px-16 not-md:px-8 py-8 pb-24! mx-16 not-md:mx-4 flex flex-col gap-10 border-x border-[#FFFCF233] grow"> */}
+      <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
+        <div className="w-full max-w-60 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-22"></div>
       </footer>
     </div>
   );
