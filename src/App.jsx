@@ -14,7 +14,7 @@ function SectionContainer({ children, className }) {
     <>
       <section
         className={cn(
-          'py-16 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center',
+          'py-14 mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
           className
         )}
       >
@@ -66,7 +66,6 @@ function App() {
         </div>
       </header>
 
-      {/* <section className="px-16 py-16 not-md:px-8 not-md:py-16 border-x border-[#FFFCF233] mx-16 not-md:mx-4 grow-2 flex flex-col gap-16 justify-center"> */}
       <Divider />
       <SectionContainer className="pt-28">
         <AboutSection translation={t} />
@@ -76,17 +75,16 @@ function App() {
         <WritingsSection translation={t} />
       </SectionContainer>
 
-      <SectionContainer className="pb-28">
+      <SectionContainer>
         <ProjectsSection translation={t} />
       </SectionContainer>
 
-      {/* <SectionContainer>
+      <SectionContainer className="pb-28">
         <StackSection translation={t} />
-      </SectionContainer> */}
+      </SectionContainer>
 
       <Divider />
 
-      {/* <footer className="px-16 not-md:px-8 py-8 pb-24! mx-16 not-md:mx-4 flex flex-col gap-10 border-x border-[#FFFCF233] grow"> */}
       <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
         <div className="w-full max-w-60 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-22"></div>
       </footer>

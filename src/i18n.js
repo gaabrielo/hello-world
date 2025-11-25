@@ -1,3 +1,16 @@
+export const stack = [
+  { tech: 'React', year: new Date().setFullYear('2020') },
+  { tech: 'Next.js', year: new Date().setFullYear('2020') },
+  { tech: 'TypeScript', year: new Date().setFullYear('2020') },
+  { tech: 'Node.js', year: new Date().setFullYear('2020') },
+  { tech: 'NestJS', year: new Date().setFullYear('2021') },
+  { tech: 'MongoDB', year: new Date().setFullYear('2021') },
+  { tech: 'GraphQL', year: new Date().setFullYear('2022') },
+  { tech: 'Supabase', year: new Date().setFullYear('2022') },
+  { tech: 'Stripe', year: new Date().setFullYear('2022') },
+  { tech: 'Remix', year: new Date().setFullYear('2023') },
+];
+
 export const translations = {
   en: {
     name: 'Gabriel Dias Mendonça',
@@ -100,6 +113,10 @@ export const translations = {
               'https://www.researchgate.net/publication/395158220_ESTIMANDO_O_INTERESSE_DE_ALUNOS_EM_AULAS_REMOTAS_COM_BASE_NA_ANALISE_DE_EXPRESSOES_FACIAIS_COM_REDES_NEURAIS_CONVOLUCIONAIS',
           },
         ],
+      },
+      stack: {
+        title: 'Stack',
+        years: 'years',
       },
     },
   },
@@ -204,6 +221,10 @@ export const translations = {
               'https://www.researchgate.net/publication/395158220_ESTIMANDO_O_INTERESSE_DE_ALUNOS_EM_AULAS_REMOTAS_COM_BASE_NA_ANALISE_DE_EXPRESSOES_FACIAIS_COM_REDES_NEURAIS_CONVOLUCIONAIS',
           },
         ],
+      },
+      stack: {
+        title: 'Experiência',
+        years: 'anos',
       },
     },
   },

@@ -35,7 +35,7 @@ export function WritingsSection({ translation: t }) {
           >
             <div
               className={cn(
-                'border-b border-[#FFFCF233] pb-2 transition-all duration-300 flex flex-col gap-1 ml-16 not-md:ml-8 pr-16 not-md:pr-8',
+                'border-b border-dashed border-[#FFFCF233] pb-2 transition-all duration-300 flex flex-col gap-1 ml-16 not-md:ml-8 pr-16 not-md:pr-8',
                 currentLinkHovering !== article.redirectTo && textDarkened
               )}
             >

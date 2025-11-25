@@ -2,18 +2,6 @@ import { useMotionValue } from 'motion/react';
 import { createContext, useContext, useMemo, useState } from 'react';
 import { useEvent } from 'react-use';
 
-// type DockContextType = {
-//   mouse?: {
-//     x: MotionValue<number>;
-//     y: MotionValue<number>;
-//   };
-//   isDockHovered: boolean;
-//   dockWidth: number | undefined;
-//   setDockWidth: Dispatch<SetStateAction<number | undefined>>;
-//   setIsDockHovered: Dispatch<SetStateAction<boolean>>;
-//   config: DockConfig;
-// };
-
 const InitialState = {
   isDockHovered: false,
   dockWidth: undefined,
