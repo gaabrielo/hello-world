@@ -27,19 +27,43 @@ export function DockWidget() {
           scale,
         }}
       >
-        <DockItem tooltipLabel="LinkedIn">
+        <DockItem
+          tooltipLabel="LinkedIn"
+          onClick={() =>
+            window.open(
+              'https://www.linkedin.com/in/gaabrielo/',
+              '_blank',
+              'noopener,noreferrer'
+            )
+          }
+        >
           <IconBrandLinkedinFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
-        <DockItem tooltipLabel="GitHub">
+        <DockItem
+          tooltipLabel="GitHub"
+          onClick={() =>
+            window.open(
+              'https://github.com/gaabrielo',
+              '_blank',
+              'noopener,noreferrer'
+            )
+          }
+        >
           <IconBrandGithubFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
-        {/* <DockItem tooltipLabel="Blog">
+        <DockItem
+          tooltipLabel="Home"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
           <IconHomeFilled className="flex items-center justify-center w-full h-full p-2" />
-        </DockItem> */}
+        </DockItem>
         <DockItem tooltipLabel="Download my CV">
           <IconFileCvFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
-        <DockItem tooltipLabel="Mail me">
+        <DockItem
+          tooltipLabel="Mail me"
+          onClick={() => window.location.assign('mailto:contact@gabrielo.xyz')}
+        >
           <IconMailFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
       </DockContainer>

@@ -1,13 +1,19 @@
 export const stack = [
+  { tech: 'Python', year: new Date().setFullYear('2019') },
   { tech: 'React', year: new Date().setFullYear('2020') },
-  { tech: 'Next.js', year: new Date().setFullYear('2020') },
+  { tech: 'SQL', year: new Date().setFullYear('2020') },
   { tech: 'TypeScript', year: new Date().setFullYear('2020') },
+  { tech: 'Next.js', year: new Date().setFullYear('2020') },
   { tech: 'Node.js', year: new Date().setFullYear('2020') },
+  { tech: 'Java', year: new Date().setFullYear('2021') },
   { tech: 'NestJS', year: new Date().setFullYear('2021') },
   { tech: 'MongoDB', year: new Date().setFullYear('2021') },
+  { tech: 'React Native', year: new Date().setFullYear('2021') },
   { tech: 'GraphQL', year: new Date().setFullYear('2022') },
   { tech: 'Supabase', year: new Date().setFullYear('2022') },
-  { tech: 'Stripe', year: new Date().setFullYear('2022') },
+  { tech: 'Firebase', year: new Date().setFullYear('2022') },
+  { tech: '.NET', year: new Date().setFullYear('2023') },
+  { tech: 'C#', year: new Date().setFullYear('2023') },
   { tech: 'Remix', year: new Date().setFullYear('2023') },
 ];
 

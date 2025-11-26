@@ -11,17 +11,14 @@ import { StackSection } from './components/stack-section';
 
 function SectionContainer({ children, className }) {
   return (
-    <>
-      <section
-        className={cn(
-          'py-14 mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
-          className
-        )}
-      >
-        {children}
-      </section>
-      {/* <Divider /> */}
-    </>
+    <section
+      className={cn(
+        'py-14 mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
+        className
+      )}
+    >
+      {children}
+    </section>
   );
 }
 
@@ -67,7 +64,8 @@ function App() {
       </header>
 
       <Divider />
-      <SectionContainer className="pt-28">
+
+      <SectionContainer className="md:pt-28">
         <AboutSection translation={t} />
       </SectionContainer>
 
@@ -79,14 +77,14 @@ function App() {
         <ProjectsSection translation={t} />
       </SectionContainer>
 
-      <SectionContainer className="pb-28">
+      <SectionContainer className="md:pb-28">
         <StackSection translation={t} />
       </SectionContainer>
 
       <Divider />
 
       <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
-        <div className="w-full max-w-60 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-22"></div>
+        <div className="w-full max-w-48 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-22"></div>
       </footer>
     </div>
   );

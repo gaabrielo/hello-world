@@ -3,7 +3,7 @@ import { SectionHeader } from './ui/section-header';
 
 function StackColumn({ data, translation: t }) {
   return (
-    <div className="w-full space-y-3">
+    <div className="w-full max-w-2xl mx-auto space-y-3">
       {data.map((item) => (
         <div
           key={item.tech}
@@ -19,7 +19,7 @@ function StackColumn({ data, translation: t }) {
         </div>
       ))}
 
-      <div className="flex justify-between items-baseline text-neutral-400 pt-1 mt-6 border-t border-[#FFFCF233] border-dashed not-md:hidden">
+      <div className="flex justify-between items-baseline text-neutral-400 pt-1 mt-7 border-t border-[#FFFCF233] border-dashed">
         <span className="mr-2 font-bold! text-sm! uppercase font-mono! font-vend-sans">
           Tech
         </span>
@@ -36,18 +36,7 @@ export function StackSection({ translation: t }) {
     <section className="px-16 not-md:px-8">
       <SectionHeader>{t.sections.stack.title}</SectionHeader>
 
-      <div className="grid grid-cols-2 not-md:grid-cols-1 md:gap-20">
-        <StackColumn data={stack.slice(0, 5)} translation={t} />
-        <StackColumn data={stack.slice(-5)} translation={t} />
-      </div>
-      <div className="flex justify-between items-baseline text-neutral-400 pt-1 mt-3 border-t border-[#FFFCF233] border-dashed md:hidden">
-        <span className="mr-2 font-bold! text-sm! uppercase font-mono! font-vend-sans">
-          Tech
-        </span>
-        <span className="ml-2 font-bold! text-sm! uppercase font-mono! font-vend-sans">
-          {t.sections.stack.years}
-        </span>
-      </div>
+      <StackColumn data={stack} translation={t} />
     </section>
   );
 }

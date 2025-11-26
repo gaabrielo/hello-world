@@ -16,7 +16,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useEvent } from 'react-use';
 import { useDockContext } from './context';
 
-const DockItem = ({ children, tooltipLabel, isActive }) => {
+const DockItem = ({ children, tooltipLabel, isActive, onClick }) => {
   const ref = useRef(null);
   const { dockWidth, mouse, isDockHovered, config } = useDockContext();
   const { size, magnification, scale } = config;
@@ -104,6 +104,7 @@ const DockItem = ({ children, tooltipLabel, isActive }) => {
                 },
               })
             }
+            onClick={onClick}
             style={{
               height: spring,
               width: spring,
