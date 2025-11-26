@@ -4,6 +4,7 @@ import ImageSkinSpin from '../assets/skinspin.png';
 import ImageMovs from '../assets/movs.webp';
 import ImageReads from '../assets/epubreads.png';
 import ImageAstro from '../assets/astro.png';
+import ImageLupulo from '../assets/lupulo.png';
 import { cn } from '../utils/cn';
 
 const imagePath = {
@@ -12,6 +13,7 @@ const imagePath = {
   gameroll: { path: ImageGameroll },
   astro: { path: ImageAstro, className: 'object-center' },
   movs: { path: ImageMovs, className: 'object-center' },
+  lupulo: { path: ImageLupulo, className: 'object-center' },
 };
 
 export function ProjectsSection({ translation: t }) {
