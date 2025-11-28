@@ -24,9 +24,33 @@ export function ProjectsSection({ translation: t }) {
         {t.sections.projects.items.map((item) => (
           <button
             key={item.slug}
-            className="w-full bg-neutral-900 aspect-video rounded-4xl not-md:rounded-xl col-span-1 overflow-hidden group relative border border-[#FFFCF233]"
+            className="w-full bg-neutral-900 aspect-video rounded-4xl not-md:rounded-xl col-span-1 overflow-hidden group border border-[#FFFCF233] relative"
           >
-            <div className="absolute top-0 left-0 w-full h-full animate-gradient z-10"></div>
+            {/* shiny effect */}
+            <div className="absolute top-0 left-0 w-full h-full animate-gradient z-1"></div>
+            {/* status of development badge */}
+            <div className="absolute z-2 bottom-2 right-6 flex items-center gap-2 px-3 py-1 text-neutral-200 backdrop-blur-md bg-black/50 shadow-md ring-1 ring-white/10 rounded-full">
+              {item.inDevelopment ? (
+                <>
+                  <div className="relative h-2 w-2">
+                    <div className="relative h-2 w-2 rounded-full bg-neutral-400" />
+                  </div>
+                  <span className="text-xs! font-vend-sans! drop-shadow-[0_0_4px_rgba(0,0,0,0.9)]">
+                    In progress
+                  </span>
+                </>
+              ) : (
+                <>
+                  <div className="relative h-2 w-2">
+                    <div className="absolute -inset-0.5 rounded-full bg-green-500/60 animate-ping"></div>
+                    <div className="relative h-2 w-2 rounded-full bg-green-500" />
+                  </div>
+                  <span className="text-xs! font-vend-sans! drop-shadow-[0_0_4px_rgba(0,0,0,0.9)]">
+                    Live
+                  </span>
+                </>
+              )}
+            </div>
             <img
               src={imagePath[item.slug]?.path}
               alt={item.title}

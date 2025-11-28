@@ -95,7 +95,6 @@ const projects = [
     },
     inDevelopment: true,
   },
-
   // skinspin
   {
     title: 'SkinSpin',
