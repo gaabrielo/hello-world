@@ -3,7 +3,7 @@ import { cn } from '../utils/cn';
 import { SectionHeader } from './ui/section-header';
 
 const linkStyle =
-  'transition-opacity duration-300 not-md:underline underline-offset-4';
+  'transition-opacity duration-300 not-md:underline underline-offset-4 font-vend-sans';
 
 export function AboutSection({ translation: t }) {
   const [textDarkened, setTextDarkened] = useState('');
@@ -24,18 +24,18 @@ export function AboutSection({ translation: t }) {
       <SectionHeader>{t.sections.about.title}</SectionHeader>
 
       <p
-        className={`leading-7 transition-opacity duration-300 ${textDarkened}`}
+        className={`leading-7 transition-opacity duration-300 font-vend-sans ${textDarkened}`}
       >
         {t.sections.about.bio1}
       </p>
       <p
-        className={`py-4 leading-7 transition-opacity duration-300 ${textDarkened}`}
+        className={`py-4 leading-7 transition-opacity duration-300 font-vend-sans ${textDarkened}`}
       >
         {t.sections.about.bio2}
       </p>
       <div className="inline">
         <span
-          className={`leading-7 transition-opacity duration-300 ${textDarkened}`}
+          className={`leading-7 transition-opacity duration-300 font-vend-sans ${textDarkened}`}
         >
           {t.sections.about.findMe}
         </span>{' '}
@@ -52,7 +52,7 @@ export function AboutSection({ translation: t }) {
           LinkedIn
         </a>{' '}
         <span
-          className={`leading-7 transition-opacity duration-300 ${textDarkened}`}
+          className={`leading-7 transition-opacity duration-300 font-vend-sans ${textDarkened}`}
         >
           {t.sections.about.andCode}
         </span>{' '}
@@ -69,7 +69,7 @@ export function AboutSection({ translation: t }) {
           GitHub
         </a>
         <span
-          className={`leading-7 transition-opacity duration-300 ${textDarkened}`}
+          className={`leading-7 transition-opacity duration-300 font-vend-sans ${textDarkened}`}
         >
           .
         </span>

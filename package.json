@@ -13,6 +13,7 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tabler/icons-react": "^3.35.0",
     "@tailwindcss/vite": "^4.1.13",
+    "@uidotdev/usehooks": "^2.4.1",
     "clsx": "^2.1.1",
     "motion": "^12.23.24",
     "react": "^19.1.1",

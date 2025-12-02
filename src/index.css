@@ -20,17 +20,19 @@
 }
 
 * {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Vend Sans', sans-serif;
   font-size: 0.975rem;
 }
 
 body {
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: #252422;
 
   overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
 h1 {
@@ -56,6 +58,30 @@ button {
   /* font-variation-settings:
     "wdth" <width>,
     "YTLC" <lowercase height>; */
+}
+
+@font-face {
+  font-family: 'Mondwest Regular';
+  src: url('./assets/fonts/Mondwest-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mondwest Bold';
+  src: url('./assets/fonts/Mondwest-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-mondwest {
+  font-family: 'Mondwest Regular', sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-mondwest-bold {
+  font-family: 'Mondwest Bold', sans-serif;
+  font-optical-sizing: auto;
 }
 
 @keyframes animate-gradient {

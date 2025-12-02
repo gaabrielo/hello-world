@@ -1,3 +1,18 @@
+import ImageGameroll from './assets/gameroll.webp';
+import ImageSkinSpin from './assets/skinspin.png';
+import ImageMovs from './assets/movs.webp';
+import ImageReads from './assets/epubreads.png';
+import ImageAstro from './assets/astro.png';
+import ImageLupulo from './assets/lupulo.png';
+import {
+  IsoIconABC,
+  IsoIconChess,
+  IsoIconFastFood,
+  IsoIconPlant,
+  IsoIconStar,
+  IsoIconTheater,
+} from './utils/icons';
+
 export const stack = [
   { tech: 'Python', year: new Date().setFullYear('2019') },
   { tech: 'React', year: new Date().setFullYear('2020') },
@@ -16,6 +31,23 @@ export const stack = [
   { tech: 'C#', year: new Date().setFullYear('2023') },
   { tech: 'Remix', year: new Date().setFullYear('2023') },
 ];
+
+export const projectImagePath = {
+  epubreads: { path: ImageReads, icon: IsoIconABC },
+  skinspin: { path: ImageSkinSpin, icon: IsoIconChess },
+  gameroll: { path: ImageGameroll, icon: IsoIconStar },
+  astro: {
+    path: ImageAstro,
+    className: 'object-center',
+    icon: IsoIconFastFood,
+  },
+  movs: { path: ImageMovs, className: 'object-center', icon: IsoIconTheater },
+  lupulo: {
+    path: ImageLupulo,
+    className: 'object-center',
+    icon: IsoIconPlant,
+  },
+};
 
 const projects = [
   // astro
@@ -123,6 +155,10 @@ export const translations = {
       },
       projects: {
         title: 'Projects',
+        status: {
+          inDevelopment: 'In development',
+          live: 'Live',
+        },
         items: projects.map((p) => ({
           title: typeof p.title === 'string' ? p.title : p.title.en,
           slug: p.slug,
@@ -136,6 +172,7 @@ export const translations = {
         title: 'Writings',
         articles: [
           {
+            slug: 'interdisciplinary',
             title:
               'Development of an Interdisciplinary Gamified Virtual Learning Environment',
             tags: [
@@ -146,6 +183,7 @@ export const translations = {
               'https://www.researchgate.net/publication/386258851_Desenvolvimento_de_um_Ambiente_Virtual_de_Aprendizagem_Gamificado_Interdisciplinar',
           },
           {
+            slug: 'neural-network',
             title:
               "ESTIMATING STUDENTS' INTEREST IN REMOTE CLASSES BASED ON THE ANALYSIS OF FACIAL EXPRESSIONS USING CONVOLUTIONAL NEURAL NETWORKS",
             tags: [
@@ -176,10 +214,14 @@ export const translations = {
       },
       projects: {
         title: 'Projetos',
+        status: {
+          inDevelopment: 'Em desenvolvimento',
+          live: 'Live',
+        },
         items: projects.map((p) => ({
-          title: typeof p.title === 'string' ? p.title : p.title.en,
+          title: typeof p.title === 'string' ? p.title : p.title.pt,
           slug: p.slug,
-          description: p.description.en,
+          description: p.description.pt,
           stack: p.stack,
           links: p.links,
           inDevelopment: p.inDevelopment,
@@ -189,6 +231,7 @@ export const translations = {
         title: 'Artigos',
         articles: [
           {
+            slug: 'interdisciplinary',
             title:
               'Desenvolvimento de um Ambiente Virtual de Aprendizagem Gamificado Interdisciplinar',
             tags: [
@@ -199,6 +242,7 @@ export const translations = {
               'https://www.researchgate.net/publication/386258851_Desenvolvimento_de_um_Ambiente_Virtual_de_Aprendizagem_Gamificado_Interdisciplinar',
           },
           {
+            slug: 'neural-network',
             title:
               'ESTIMANDO O INTERESSE DE ALUNOS EM AULAS REMOTAS COM BASE NA ANÁLISE DE EXPRESSÕES FACIAIS COM REDES NEURAIS CONVOLUCIONAIS',
             tags: [

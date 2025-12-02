@@ -4,7 +4,7 @@ import { translations } from './i18n';
 import { AboutSection } from './components/about-section';
 import { WritingsSection } from './components/writings-section';
 import { Divider } from './components/ui/divider';
-import { ProjectsSection } from './components/projects-section';
+import { ProjectsSection } from './components/projects';
 import { DockWidget } from './components/dock';
 import { CreativeCommons } from './components/cc';
 import { StackSection } from './components/stack-section';
@@ -27,12 +27,12 @@ function App() {
   const t = translations[language];
 
   return (
-    <div className="text-lg w-full min-h-screen flex flex-col">
+    <div className="text-lg w-100vw flex flex-col">
       <DockWidget />
 
       <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow">
         <div className="max-w-3/4">
-          <p className="font-bold! font-vend-sans">{t.name}</p>
+          <p className="font-mondwest text-4xl! text-neutral-100">{t.name}</p>
           <p className="text-[#CCC5B9] leading-4 font-vend-sans">{t.role}</p>
         </div>
 
@@ -41,7 +41,7 @@ function App() {
           <button
             onClick={() => setLanguage('en')}
             className={cn(
-              'bg-transparent! text-sm!',
+              'bg-transparent! text-sm! font-vend-sans',
               language === 'en'
                 ? 'underline underline-offset-4'
                 : 'text-[#CCC5B9]'
@@ -52,7 +52,7 @@ function App() {
           <button
             onClick={() => setLanguage('pt')}
             className={cn(
-              'bg-transparent! text-sm!',
+              'bg-transparent! text-sm! font-vend-sans',
               language === 'pt'
                 ? 'underline underline-offset-4'
                 : 'text-[#CCC5B9]'

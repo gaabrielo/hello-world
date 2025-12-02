@@ -9,13 +9,7 @@ import {
   IconFileCvFilled,
   IconArrowUp,
 } from '@tabler/icons-react';
-import {
-  AnimatePresence,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  motion,
-} from 'motion/react';
+import { AnimatePresence, useScroll, motion } from 'motion/react';
 
 export function DockWidget() {
   const [size, setSize] = useState(40);
@@ -40,7 +34,7 @@ export function DockWidget() {
 
   return (
     // <div className="not-prose flex flex-col gap-8 p-8 justify-center items-center relative min-h-80 rounded-lg z-[2] my-10">
-    <div className="fixed bottom-6 left-1/2 z-50 flex w-fit -translate-x-1/2">
+    <div className="fixed bottom-6 left-1/2 z-11 flex w-fit -translate-x-1/2">
       <div className="absolute inset-0 bg-grid-slate-700 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255, 1))] [mask-image:linear-gradient(0deg,rgba(255,255,255,0.3),rgba(255,255,255,0.5))]"></div>
       <DockContainer
         className="relative w-fit translate-x-0 translate-y-0 left-0 bottom-0"
@@ -88,7 +82,6 @@ export function DockWidget() {
           {isScrollToTopVisible && (
             <>
               <motion.div
-                key="dock-divider"
                 layout
                 className="w-px h-[80%] bg-neutral-400 ml-1 rounded-px self-center"
                 initial={{
@@ -107,7 +100,6 @@ export function DockWidget() {
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
               ></motion.div>
               <motion.div
-                key="dock-back-to-top"
                 layout
                 initial={{
                   width: 0,

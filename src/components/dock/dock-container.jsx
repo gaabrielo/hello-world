@@ -38,7 +38,6 @@ function Dock({ children, className }) {
       >
         {children}
       </nav>
-      {/* <div className="absolute w-[95%] z-[-1] -top-[1px] h-[1px] opacity-50 dock-border-gradient" /> */}
     </motion.footer>
   );
 }

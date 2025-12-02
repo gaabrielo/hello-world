@@ -32,12 +32,6 @@ const useMousePosition = () => {
   return useMemo(() => ({ x, y }), [x, y]);
 };
 
-// export type DockConfig = {
-//   size: number;
-//   magnification: number;
-//   scale: number;
-// };
-
 export default function DockProvider({
   children,
   config = {
