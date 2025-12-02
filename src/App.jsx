@@ -27,7 +27,7 @@ function App() {
   const t = translations[language];
 
   return (
-    <div className="text-lg w-100vw flex flex-col">
+    <div className="text-lg w-100vw flex flex-col relative">
       <DockWidget />
 
       <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow">
