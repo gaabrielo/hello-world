@@ -19,7 +19,7 @@ function ProjectCard({ data, setActiveCard, translation: t, ...rest }) {
     >
       <button
         onClick={() => setActiveCard(data)}
-        className="w-full bg-neutral-900 aspect-video rounded-4xl not-md:rounded-xl col-span-1 overflow-hidden group border border-[#FFFCF233] relative"
+        className="w-full bg-neutral-900 aspect-video rounded-4xl not-md:rounded-3xl col-span-1 overflow-hidden group border border-[#FFFCF233] relative"
       >
         {/* shiny effect */}
         <div className="absolute top-0 left-0 w-full h-full animate-gradient z-1"></div>
@@ -98,12 +98,10 @@ function ActiveProjectCard({ data, translation: t, setActiveCard, ...rest }) {
         layoutId={`project-description-${data.slug}`}
         className="p-6 self-stretch"
       >
-        <span className="text-xs! font-bold! uppercase font-mono! font-vend-sans text-neutral-400">
+        {/* <span className="text-xs! font-bold! uppercase font-mono! font-vend-sans text-neutral-400">
           TITLE
-        </span>
-        <h1 className="font-bold! font-mondwest-bold text-2xl!">
-          {data.title}
-        </h1>
+        </span> */}
+        <h1 className="font-mondwest text-3xl! leading-6">{data.title}</h1>
 
         <span className="text-xs! font-bold! mt-6 inline-block uppercase font-mono! font-vend-sans text-neutral-400">
           STACK

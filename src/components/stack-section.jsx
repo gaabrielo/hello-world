@@ -19,6 +19,15 @@ function StackColumn({ data, translation: t }) {
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col">
+      <header className="flex justify-between items-baseline text-neutral-400 pt-1 mb-4 border-b border-[#FFFCF233] border-dashed">
+        <span className="mr-2 font-bold! text-xs! uppercase font-mono!">
+          Tech
+        </span>
+        <span className="ml-2 font-bold! text-xs! uppercase font-mono!">
+          {t.sections.stack.years}
+        </span>
+      </header>
+
       {data.map((item) => (
         <div
           key={item.tech}
@@ -33,20 +42,11 @@ function StackColumn({ data, translation: t }) {
 
           <div className="flex-1 border-b border-dashed border-[#FFFCF233]"></div>
 
-          <span className="ml-2 font-vend-sans">
+          <span className="ml-2 font-mondwest text-lg!">
             {new Date().getFullYear() - new Date(item.year).getFullYear()}
           </span>
         </div>
       ))}
-
-      <footer className="flex justify-between items-baseline text-neutral-400 pt-1 mt-4 border-t border-[#FFFCF233] border-dashed">
-        <span className="mr-2 font-bold! text-xs! uppercase font-mono!">
-          Tech
-        </span>
-        <span className="ml-2 font-bold! text-xs! uppercase font-mono!">
-          {t.sections.stack.years}
-        </span>
-      </footer>
     </div>
   );
 }

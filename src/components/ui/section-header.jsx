@@ -25,7 +25,7 @@ export function SectionHeader({ children, className }) {
 
       <h1
         className={cn(
-          'font-mondwest text-2xl! text-[#CCC5B9] px-5 py-1.5 rounded-full border border-[#FFFCF233]',
+          'font-mondwest-bold text-2xl! text-[#CCC5B9] px-5 py-1.5 rounded-full border border-[#FFFCF233]',
           className
         )}
       >

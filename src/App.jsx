@@ -32,12 +32,16 @@ function App() {
 
       <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow">
         <div className="max-w-3/4">
-          <p className="font-mondwest text-4xl! text-neutral-100">{t.name}</p>
-          <p className="text-[#CCC5B9] leading-4 font-vend-sans">{t.role}</p>
+          <p className="font-mondwest text-4xl! text-neutral-100 leading-8">
+            {t.name}
+          </p>
+          <p className="text-[#CCC5B9] leading-4 font-vend-sans mt-1">
+            {t.role}
+          </p>
         </div>
 
         {/* Language switcher */}
-        <div className="text-sm space-x-4 not-md:space-x-2">
+        <div className="text-sm space-x-6 md:space-x-4 not-md:space-x-2">
           <button
             onClick={() => setLanguage('en')}
             className={cn(
@@ -65,7 +69,7 @@ function App() {
 
       <Divider />
 
-      <SectionContainer className="md:pt-28">
+      <SectionContainer className="pt-16 md:pt-28">
         <AboutSection translation={t} />
       </SectionContainer>
 
@@ -77,7 +81,7 @@ function App() {
         <ProjectsSection translation={t} />
       </SectionContainer>
 
-      <SectionContainer className="md:pb-28">
+      <SectionContainer className="pb-16 md:pb-28">
         <StackSection translation={t} />
       </SectionContainer>
 

@@ -41,11 +41,11 @@ export function WritingsSection({ translation: t }) {
               currentLinkHovering !== article.redirectTo && textDarkened
             )}
           >
-            <div className="w-full p-3 rounded-4xl not-md:rounded-xl flex flex-col bg-[#312F2F] ring-1 ring-[#FFFCF233] relative">
-              <div className="w-full bg-neutral-900 aspect-16/7 rounded-4xl not-md:rounded-xl col-span-1 overflow-hidden relative flex justify-center mb-3 ring-1 ring-[#FFFCF233]">
+            <div className="w-full p-3 rounded-4xl not-md:rounded-3xl flex flex-col bg-[#312F2F] ring-1 ring-[#FFFCF233] relative">
+              <div className="w-full bg-neutral-900 aspect-16/7 rounded-3xl not-md:rounded-xl col-span-1 overflow-hidden relative flex justify-center mb-3 ring-1 ring-[#FFFCF233]">
                 <Icon
                   slug={article.slug}
-                  className="w-16 h-16 mx-auto place-self-center"
+                  className="w-12 h-12 md:w-16 md:h-16 mx-auto place-self-center"
                 />
               </div>
 
