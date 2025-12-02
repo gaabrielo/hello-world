@@ -28,7 +28,7 @@ export function WritingsSection({ translation: t }) {
     <section className="px-16 not-md:px-8">
       <SectionHeader>{t.sections.writings.title}</SectionHeader>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
         {t.sections.writings.articles.map((article) => (
           <a
             key={article.title}

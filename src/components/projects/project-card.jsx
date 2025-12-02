@@ -76,7 +76,7 @@ function ActiveProjectCard({ data, translation: t, setActiveCard, ...rest }) {
       ref={ref}
       layoutId={`project-card-${data.slug}`}
       // onClick={() => setActiveCard(data)}
-      className="relative top-0 bottom-0 md:top-auto md:bottom-auto left-0 right-0 max-w-lg mx-auto z-21 bg-[#312F2F] overflow-clip md:rounded-xl not-md:h-screen flex flex-col"
+      className="relative top-0 bottom-0 md:top-auto md:bottom-auto left-0 right-0 max-w-lg mx-auto z-21 bg-[#312F2F] overflow-clip overflow-y-auto md:rounded-xl not-md:h-screen flex flex-col"
       {...rest}
     >
       <motion.img

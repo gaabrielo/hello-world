@@ -19,7 +19,7 @@ function StackColumn({ data, translation: t }) {
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col">
-      <header className="flex justify-between items-baseline text-neutral-400 pt-1 mb-4 border-b border-[#FFFCF233] border-dashed">
+      <header className="flex justify-between items-baseline text-neutral-400 pb-1 mb-4 border-b border-[#FFFCF233] border-dashed">
         <span className="mr-2 font-bold! text-xs! uppercase font-mono!">
           Tech
         </span>

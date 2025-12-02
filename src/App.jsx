@@ -88,7 +88,7 @@ function App() {
       <Divider />
 
       <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
-        <div className="w-full max-w-48 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-22"></div>
+        <div className="w-full max-w-48 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-24"></div>
       </footer>
     </div>
   );
