@@ -41,7 +41,7 @@ export function WritingsSection({ translation: t }) {
               currentLinkHovering !== article.redirectTo && textDarkened
             )}
           >
-            <div className="w-full p-3 rounded-4xl not-md:rounded-3xl flex flex-col bg-[#312F2F] ring-1 ring-[#FFFCF233] relative">
+            <div className="w-full p-3 rounded-4xl not-md:rounded-3xl flex flex-col bg-[#312F2F] ring-1 ring-[#43423F] relative">
               <div className="w-full bg-neutral-900 aspect-16/7 rounded-3xl not-md:rounded-xl col-span-1 overflow-hidden relative flex justify-center mb-3 ring-1 ring-[#FFFCF233]">
                 <Icon
                   slug={article.slug}
@@ -59,47 +59,6 @@ export function WritingsSection({ translation: t }) {
             </div>
           </a>
         ))}
-
-        {/* {t.sections.writings.articles.map((article) => (
-          <a
-            key={article.title}
-            href={article.redirectTo}
-            target="_blank"
-            onMouseOver={() => darkenText(article.redirectTo)}
-            onMouseOut={clarifyText}
-            className="group cursor-pointer"
-          >
-            <div
-              className={cn(
-                'border-b border-dashed border-[#FFFCF233] pb-2 transition-all duration-300 flex flex-col gap-1 ml-16 not-md:ml-8 pr-16 not-md:pr-8',
-                currentLinkHovering !== article.redirectTo && textDarkened
-              )}
-            >
-            
-              <div className="flex max-md:flex-col gap-1">
-                {article.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-sm! not-md:text-xs! w-fit text-[#CCC5B9] rounded-full px-2.5 py-1 border border-[#FFFCF233] bg-neutral-900"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              
-              <div className="grid grid-cols-4 gap-1.5">
-                <p className="capitalize! font-vend-sans pl-2.5 col-span-3">
-                  {article.title.toLowerCase()}
-                </p>
-                <IconArrowUpRight
-                  size={20}
-                  className="col-span-1 ml-auto mr-0 self-end text-[#CCC5B9] group-hover:text-gray-50 transition-all duration-300"
-                />
-              </div>
-            </div>
-          </a>
-        ))} */}
       </div>
     </section>
   );
