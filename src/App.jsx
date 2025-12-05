@@ -6,8 +6,11 @@ import { WritingsSection } from './components/writings-section';
 import { Divider } from './components/ui/divider';
 import { ProjectsSection } from './components/projects';
 import { DockWidget } from './components/dock';
-import { CreativeCommons } from './components/cc';
 import { StackSection } from './components/stack-section';
+import { HeroMockups } from './components/hero-mockups';
+// import { CvFooter } from './components/cv-footer';
+// import { CreativeCommons } from './components/cc';
+import { IconCornerDownRight } from '@tabler/icons-react';
 
 function SectionContainer({ children, className }) {
   return (
@@ -30,7 +33,7 @@ function App() {
     <div className="text-lg w-100vw flex flex-col relative">
       <DockWidget />
 
-      <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow">
+      <header className="px-16 not-md:px-8 py-16 mx-16 not-md:mx-4 border-x border-[#FFFCF233] flex items-center justify-between grow -mt-1/2">
         <div className="max-w-3/4">
           <p className="font-mondwest text-4xl! text-neutral-100 leading-8">
             {t.name}
@@ -81,15 +84,29 @@ function App() {
         <ProjectsSection translation={t} />
       </SectionContainer>
 
-      <SectionContainer className="pb-16 md:pb-28">
+      <SectionContainer className="pb-16 md:pb-28 z-2 bg-[#252422]">
         <StackSection translation={t} />
       </SectionContainer>
 
-      <Divider />
+      <Divider className="z-2" />
 
-      <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
+      <HeroMockups className="bg-neutral-950 pt-16" />
+      <div className="bg-neutral-950 w-full relative pb-46">
+        <button
+          onClick={() => window.location.assign('mailto:contact@gabrielo.xyz')}
+          className="w-fit bg-lime-600 p-4 rounded-full absolute translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all"
+        >
+          <IconCornerDownRight size={20} /> Let's work together
+        </button>
+
+        {/* <CvFooter className="mt-28" /> */}
+      </div>
+
+      {/* <Divider /> */}
+
+      {/* <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
         <div className="w-full max-w-48 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-24"></div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

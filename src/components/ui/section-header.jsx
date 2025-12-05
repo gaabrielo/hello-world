@@ -19,7 +19,7 @@ export function SectionHeader({ children, className }) {
         className={cn(
           'relative inline-flex items-center',
           'bg-[#1E1D1D] border border-[#43423F]',
-          'rounded-r-xl rounded-bl-xl',
+          'rounded-r-xl rounded-bl-xl -ml-6',
           className
         )}
         style={{

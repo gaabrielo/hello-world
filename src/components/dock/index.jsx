@@ -20,6 +20,22 @@ export function DockWidget() {
 
   const { scrollY } = useScroll();
 
+  const handleDownload = () => {
+    const fileUrl = '/resume_2025.pdf'; // Replace with the actual path to your file
+    const fileName = 'Gabriel_Dias_Mendonca_Resume.pdf'; // Replace with your desired filename
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const unsubscribe = scrollY.on('change', (latestPos) => {
       setIsScrollToTopVisible(latestPos > 100);
@@ -27,10 +43,6 @@ export function DockWidget() {
 
     return () => unsubscribe();
   }, [scrollY]);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     // <div className="not-prose flex flex-col gap-8 p-8 justify-center items-center relative min-h-80 rounded-lg z-[2] my-10">
@@ -75,7 +87,7 @@ export function DockWidget() {
         >
           <IconMailFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
-        <DockItem tooltipLabel="Download my CV">
+        <DockItem onClick={handleDownload} tooltipLabel="Download my CV">
           <IconFileCvFilled className="flex items-center justify-center w-full h-full p-2" />
         </DockItem>
         <AnimatePresence mode="popLayout">
