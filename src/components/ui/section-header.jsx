@@ -5,7 +5,7 @@ const width = 92;
 const height = 56;
 export function SectionHeader({ children, className }) {
   return (
-    <div className="w-full text-center mb-14">
+    <div className="w-full text-center sm:text-left mb-14">
       {/* <h1
         className={cn(
           'font-mondwest text-2xl! text-[#CCC5B9] px-5 py-1.5 rounded-full border border-[#FFFCF233]',

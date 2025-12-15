@@ -11,12 +11,13 @@ import { HeroMockups } from './components/hero-mockups';
 // import { CvFooter } from './components/cv-footer';
 // import { CreativeCommons } from './components/cc';
 import { IconCornerDownRight } from '@tabler/icons-react';
+import { ProjectBoard } from './components/project-board';
 
 function SectionContainer({ children, className }) {
   return (
     <section
       className={cn(
-        'py-14 mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
+        'pt-16 sm:py-14! mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
         className
       )}
     >
@@ -77,15 +78,24 @@ function App() {
       </SectionContainer>
 
       <SectionContainer>
-        <WritingsSection translation={t} />
+        {/* <ProjectsSection translation={t} /> */}
+        <ProjectBoard />
       </SectionContainer>
 
-      <SectionContainer>
-        <ProjectsSection translation={t} />
-      </SectionContainer>
+      {/* <SectionContainer>
+        </SectionContainer>
 
-      <SectionContainer className="pb-16 md:pb-28 z-2 bg-[#252422]">
-        <StackSection translation={t} />
+        <SectionContainer className="pb-16 md:pb-28 z-2 bg-[#252422]">
+        </SectionContainer> */}
+      <SectionContainer className="z-2 bg-[#252422]">
+        <div className="flex flex-col-reverse sm:flex-row">
+          <div className="flex-1 my-16 sm:mt-0">
+            <StackSection translation={t} />
+          </div>
+          <div className="flex-1">
+            <WritingsSection translation={t} />
+          </div>
+        </div>
       </SectionContainer>
 
       <Divider className="z-2" />
@@ -94,7 +104,7 @@ function App() {
       <div className="bg-neutral-950 w-full relative pb-46">
         <button
           onClick={() => window.location.assign('mailto:contact@gabrielo.xyz')}
-          className="w-fit bg-lime-600 p-4 rounded-full absolute translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all"
+          className="whitespace-nowrap bg-lime-600 px-4 py-3 rounded-full absolute translate-y-[-12%] sm:translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all"
         >
           <IconCornerDownRight size={20} /> Let's work together
         </button>

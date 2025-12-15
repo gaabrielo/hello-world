@@ -50,39 +50,21 @@ export const projectImagePath = {
 };
 
 const projects = [
-  // astro
+  // gameroll
   {
-    title: {
-      pt: 'Astro Burger - Cardápio Digital',
-      en: 'Astro Burger  - Digital Menu',
-    },
-    slug: 'astro',
+    title: 'Gameroll',
+    slug: 'gameroll',
     description: {
-      pt: 'Cardápio digital de hamburgueria. Com foco na experiência mobile.',
-      en: 'Digital menu for a burger restaurant. Focused on mobile experience.',
+      pt: 'Gameroll é a sua rede social para games. Crie um diário com os jogos que você jogou, avalie, escreva críticas e descubra seu próximo jogo favorito com base nas recomendações da comunidade.',
+      en: 'Gameroll is your social network for games. Create a diary with the games you played, rate, write critiques and discover your next favorite game with the community’s recommendations.',
     },
-    stack: ['React', 'Node.js', 'TypeScript', 'Supabase'],
+    stack: ['React Native', 'Node.js', 'TypeScript', 'Stripe'],
     links: {
-      web: 'https://burgerastro.vercel.app/',
-      github: '',
+      dribbble: 'https://dribbble.com/shots/22829842-Review-form-Gameroll',
     },
-    inDevelopment: false,
+    inDevelopment: true,
   },
-  // movs
-  {
-    title: 'movs',
-    slug: 'movs',
-    description: {
-      pt: 'Registre seus filmes favoritos e acompanhe as avaliações dos seus amigos.',
-      en: 'Register your favorite movies and follow the ratings of your friends.',
-    },
-    stack: ['React', 'Node.js', 'TypeScript', 'GraphQL'],
-    links: {
-      dribbble: 'https://dribbble.com/shots/18466798-movs-Cinema-application',
-      github: '',
-    },
-    inDevelopment: false,
-  },
+
   // epubreads
   {
     title: {
@@ -113,20 +95,7 @@ const projects = [
     },
     inDevelopment: false,
   },
-  // gameroll
-  {
-    title: 'Gameroll',
-    slug: 'gameroll',
-    description: {
-      pt: 'Gameroll é a sua rede social para games. Crie um diário com os jogos que você jogou, avalie, escreva críticas e descubra seu próximo jogo favorito com base nas recomendações da comunidade.',
-      en: 'Gameroll is your social network for games. Create a diary with the games you played, rate, write critiques and discover your next favorite game with the community’s recommendations.',
-    },
-    stack: ['React Native', 'Node.js', 'TypeScript', 'Stripe'],
-    links: {
-      dribbble: 'https://dribbble.com/shots/22829842-Review-form-Gameroll',
-    },
-    inDevelopment: true,
-  },
+
   // skinspin
   {
     title: 'SkinSpin',
@@ -137,6 +106,41 @@ const projects = [
     },
     stack: ['Next.js', 'Node.js', 'TypeScript', 'Framer Motion', 'Stripe'],
     links: { web: 'https://skinspin.vercel.app/', github: '' },
+    inDevelopment: false,
+  },
+
+  // astro
+  {
+    title: {
+      pt: 'Astro Burger - Cardápio Digital',
+      en: 'Astro Burger  - Digital Menu',
+    },
+    slug: 'astro',
+    description: {
+      pt: 'Cardápio digital de hamburgueria. Com foco na experiência mobile.',
+      en: 'Digital menu for a burger restaurant. Focused on mobile experience.',
+    },
+    stack: ['React', 'Node.js', 'TypeScript', 'Supabase'],
+    links: {
+      web: 'https://burgerastro.vercel.app/',
+      github: '',
+    },
+    inDevelopment: false,
+  },
+
+  // movs
+  {
+    title: 'movs',
+    slug: 'movs',
+    description: {
+      pt: 'Registre seus filmes favoritos e acompanhe as avaliações dos seus amigos.',
+      en: 'Register your favorite movies and follow the ratings of your friends.',
+    },
+    stack: ['React', 'Node.js', 'TypeScript', 'GraphQL'],
+    links: {
+      dribbble: 'https://dribbble.com/shots/18466798-movs-Cinema-application',
+      github: '',
+    },
     inDevelopment: false,
   },
 ];
