@@ -1,11 +1,11 @@
 import { Link } from '@tanstack/react-router';
 import { IconChevronRight } from '@tabler/icons-react';
 import { IconHome } from '@tabler/icons-react';
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 function Breadcrumbs({ pathList }) {
   return (
-    <div className="flex gap-1 items-center mb-4 bg-zinc-900 w-fit p-1.5 rounded-xl border border-zinc-600/40">
+    <div className="flex gap-1 items-center bg-zinc-900 w-fit p-1.5 rounded-xl border border-zinc-600/40">
       {pathList.map((path, index) => (
         <>
           <BreadcrumbsLink key={index} to={path.path}>
