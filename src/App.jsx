@@ -4,7 +4,6 @@ import { translations } from './i18n';
 import { AboutSection } from './components/about-section';
 import { WritingsSection } from './components/writings-section';
 import { Divider } from './components/ui/divider';
-import { ProjectsSection } from './components/projects';
 import { DockWidget } from './components/dock';
 import { StackSection } from './components/stack-section';
 import { HeroMockups } from './components/hero-mockups';
@@ -12,12 +11,13 @@ import { HeroMockups } from './components/hero-mockups';
 // import { CreativeCommons } from './components/cc';
 import { IconCornerDownRight } from '@tabler/icons-react';
 import { ProjectBoard } from './components/project-board';
+import { Link } from '@tanstack/react-router';
 
 function SectionContainer({ children, className }) {
   return (
     <section
       className={cn(
-        'pt-16 sm:py-14! mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
+        'pt-16 sm:pt-14 sm:pb-14 mx-16 not-md:mx-4 grow-2 border-x border-[#FFFCF233] flex flex-col gap-16 justify-center',
         className
       )}
     >
@@ -73,26 +73,23 @@ function App() {
 
       <Divider />
 
-      <SectionContainer className="pt-16 md:pt-28">
+      <SectionContainer className="pb-16 z-2 bg-[#252422]">
         <AboutSection translation={t} />
       </SectionContainer>
+      <Divider className="z-2" />
 
-      <SectionContainer>
+      <SectionContainer className="not-md:mx-0! not-md:px-4! py-14 not-md:bg-zinc-900 not-md:border-0 relative">
         {/* <ProjectsSection translation={t} /> */}
         <ProjectBoard />
       </SectionContainer>
 
-      {/* <SectionContainer>
-        </SectionContainer>
-
-        <SectionContainer className="pb-16 md:pb-28 z-2 bg-[#252422]">
-        </SectionContainer> */}
-      <SectionContainer className="z-2 bg-[#252422]">
+      <Divider />
+      <SectionContainer className="z-2 bg-[#252422] p-0!">
         <div className="flex flex-col-reverse sm:flex-row">
-          <div className="flex-1 my-16 sm:mt-0">
+          <div className="flex-1 pb-16 sm:py-16">
             <StackSection translation={t} />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 pb-20 pt-16 sm:py-16 sm:border-l border-[#514F4C]">
             <WritingsSection translation={t} />
           </div>
         </div>
@@ -101,15 +98,28 @@ function App() {
       <Divider className="z-2" />
 
       <HeroMockups className="bg-neutral-950 pt-16" />
-      <div className="bg-neutral-950 w-full relative pb-46">
-        <button
-          onClick={() => window.location.assign('mailto:contact@gabrielo.xyz')}
-          className="whitespace-nowrap bg-lime-600 px-4 py-3 rounded-full absolute translate-y-[-12%] sm:translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all"
-        >
-          <IconCornerDownRight size={20} /> Let's work together
-        </button>
+      <div className="bg-neutral-950 w-full relative pb-0">
+        <Link to="/contact">
+          <button className="whitespace-nowrap bg-lime-600 px-4 py-3 rounded-full absolute translate-y-[-12%] sm:translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all">
+            <IconCornerDownRight size={20} /> Let's work together
+          </button>
+        </Link>
 
         {/* <CvFooter className="mt-28" /> */}
+        <div className="mx-16 not-md:mx-4 pt-28 pb-12 text-zinc-500 flex gap-1.5">
+          <p>Copyright {new Date().getFullYear()}</p>
+          <span>//</span>
+          <Link
+            to="/privacy-policy"
+            className="hover:text-zinc-100 transition-all"
+          >
+            Privacy policy
+          </Link>
+          <span>//</span>
+          <Link to="/faq" className="hover:text-zinc-100 transition-all">
+            FAQ
+          </Link>
+        </div>
       </div>
 
       {/* <Divider /> */}
