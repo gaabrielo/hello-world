@@ -42,21 +42,17 @@ function LayoutAnimation() {
   }, []);
 
   const layouts = [
-    'grid-cols-2 grid-rows-2',
-    'grid-cols-3 grid-rows-1 max-w-[200px]!',
-    'grid-cols-1 grid-rows-3',
+    'grid-cols-2 grid-rows-2 max-w-[140px] mt-4',
+    'grid-cols-3 grid-rows-1 max-w-[280px] mt-12',
+    'grid-cols-1 grid-rows-3 max-w-[140px]',
   ];
 
   return (
     <div className="h-full p-4 flex items-center justify-center">
-      <motion.div
-        className={`grid ${layouts[layout]} gap-2 w-full max-w-[140px]`}
-        layout
-      >
+      <motion.div className={`grid ${layouts[layout]} gap-2 w-full`} layout>
         {[1, 2, 3].map((i) => (
           <motion.div
             key={i}
-            // className="bg-foreground rounded-md min-h-[30px]"
             className="h-[30px]"
             layout
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -71,7 +67,7 @@ function LayoutAnimation() {
 
 function CardLabel({ title, subtitle }) {
   return (
-    <div className="mt-4">
+    <div className="mt-auto mb-0">
       <h3 className="font-mondwest-bold uppercase text-2xl!">
         {/* Business-First Architecture */}
         {title}
@@ -100,7 +96,7 @@ export function FeaturesSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Typography Card */}
         <motion.div
-          className="bg-[#E0E0E0] rounded-xl p-8 min-h-[280px] flex flex-col"
+          className="bg-[#E0E0E0] rounded-xl p-8 h-[280px] flex flex-col relative"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -109,7 +105,7 @@ export function FeaturesSection() {
           transition={{ duration: 0.2 }}
           data-clickable
         >
-          <div className="flex-1">
+          <div className="absolute top-4 md:top-8 left-1/2 -translate-x-1/2">
             <LayoutAnimation />
           </div>
           <CardLabel
@@ -120,7 +116,7 @@ export function FeaturesSection() {
 
         {/* Layouts Card */}
         <motion.div
-          className="bg-[#E0E0E0] rounded-xl p-8 min-h-[280px] flex flex-col"
+          className="bg-[#E0E0E0] rounded-xl p-8 h-[280px] flex flex-col relative"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -129,7 +125,7 @@ export function FeaturesSection() {
           whileTap={{ scale: 0.96 }}
           data-clickable
         >
-          <div className="flex-1">
+          <div className="absolute top-4 md:top-8 left-1/2 -translate-x-1/2">
             <PortraitAnimation />
           </div>
           <CardLabel
@@ -140,7 +136,7 @@ export function FeaturesSection() {
 
         {/* Speed Card */}
         <motion.div
-          className="bg-[#E0E0E0] rounded-xl p-8 min-h-[280px] flex flex-col"
+          className="bg-[#E0E0E0] rounded-xl p-8 h-[280px] flex flex-col"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -149,7 +145,7 @@ export function FeaturesSection() {
           whileTap={{ scale: 0.96 }}
           data-clickable
         >
-          <div className="flex-1 flex flex-col items-center justify-center h-full gap-4">
+          <div className="flex-1 flex flex-col items-center mt-2 md:mt-8">
             {/* <SpeedIndicator /> */}
             <DrawnProgress />
           </div>
