@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { cn } from '../utils/cn';
-import { SectionHeader } from './ui/section-header';
+import { cn } from '../../utils/cn';
+import { SectionHeader } from '../ui/section-header';
 
 const linkStyle =
   'transition-opacity duration-300 not-md:underline underline-offset-4 font-vend-sans';

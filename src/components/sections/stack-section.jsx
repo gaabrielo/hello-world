@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { stack } from '../i18n';
-import { SectionHeader } from './ui/section-header';
-import { cn } from '../utils/cn';
+import { stack } from '../../i18n';
+import { SectionHeader } from '../ui/section-header';
+import { cn } from '../../utils/cn';
 
 function StackColumn({ data, translation: t }) {
   const [textDarkened, setTextDarkened] = useState('');

@@ -3,7 +3,7 @@ import mockupCenter from '../assets/mockups/gameroll.png';
 import mockupRight from '../assets/mockups/realmode.png';
 import { cn } from '../utils/cn';
 
-export function HeroMockups({ className }) {
+export function MobileMockups({ className }) {
   return (
     <section className={cn('relative flex justify-center z-1', className)}>
       {/* Glow atrás dos mockups */}

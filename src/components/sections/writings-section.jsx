@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { cn } from '../utils/cn';
-import { SectionHeader } from './ui/section-header';
+import { cn } from '../../utils/cn';
+import { SectionHeader } from '../ui/section-header';
 import { IconArrowUpRight } from '@tabler/icons-react';
-import { IsoIconFlower, IsoIconChart } from '../utils/icons';
+import { IsoIconFlower, IsoIconChart } from '../../utils/icons';
 import { IconArrowRight } from '@tabler/icons-react';
 
 const icons = {

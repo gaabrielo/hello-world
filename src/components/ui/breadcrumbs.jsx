@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from '@tanstack/react-router';
 import { IconChevronRight } from '@tabler/icons-react';
 import { IconHome } from '@tabler/icons-react';
@@ -7,12 +8,10 @@ function Breadcrumbs({ pathList }) {
   return (
     <div className="flex gap-1 items-center bg-zinc-900 w-fit p-1.5 rounded-xl border border-zinc-600/40">
       {pathList.map((path, index) => (
-        <>
-          <BreadcrumbsLink key={index} to={path.path}>
-            {path.name}
-          </BreadcrumbsLink>
+        <React.Fragment key={index}>
+          <BreadcrumbsLink to={path.path}>{path.name}</BreadcrumbsLink>
           {index < pathList.length - 1 && <IconChevronRight size={14} />}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
