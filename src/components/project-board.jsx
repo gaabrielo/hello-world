@@ -4,7 +4,7 @@ import ProjectBoardImage from '../assets/projects-board.png';
 export function ProjectBoard({ children }) {
   return (
     <div className="sm:px-16">
-      <div className="pointer-events-none absolute inset-x-0 top-8 z-1 flex justify-center md:sr-only">
+      <div className="pointer-events-none absolute inset-x-0 top-8 z-0 flex justify-center md:sr-only">
         <div
           className="
             h-48 w-[700px]

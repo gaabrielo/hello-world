@@ -8,7 +8,6 @@ import { IconCalendarEvent } from '@tabler/icons-react';
 import { FeaturesSection } from '../components/sections/features-section';
 import { DrawnArrow } from '../utils/icons';
 import { Divider } from '../components/ui/divider';
-import { SectionHeader } from '../components/ui/section-header';
 import { IconBrandLinkedin, IconBrandGithub, IconBrandDribbble, IconMail } from '@tabler/icons-react';
 import { IconArrowUpRight } from '@tabler/icons-react';
 
@@ -46,7 +45,7 @@ function RouteComponent() {
 
   return (
     <>
-      <div className="w-full flex flex-col items-start min-h-screen p-8 text-[#121212]">
+      <div className="w-full flex flex-col items-start min-h-screen p-8 not-sm:p-6 max-w-screen text-[#121212]">
         {/* <div className="w-full gap-4 grid grid-cols-1 sm:grid-cols-2">
           <div className="col-span-1 bg-[#E0E0E0] rounded-[2.5rem] flex flex-col items-start justify-between p-10 not-sm:aspect-square!">
             <p className="font-mondwest uppercase text-3xl! leading-9 lg:text-7xl! lg:leading-15">
@@ -77,12 +76,11 @@ function RouteComponent() {
         <FeaturesSection /> */}
 
         <div className="max-w-4xl w-full mx-auto py-16 space-y-6">
-          {/* <SectionHeader>Contact me</SectionHeader> */}
           <h1 className="font-mondwest text-6xl! text-[#CCC5B9] leading-none select-none whitespace-nowrap">
             {t.sections.contact.title}
           </h1>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {LINKS.map(l => {
               const Icon = l.icon;
               return (
