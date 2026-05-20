@@ -123,7 +123,7 @@ export const ParallaxCard = ({
         {/* Layer 2: Middle (Floating Rocks) */}
         <motion.div
           style={{ x: midX, y: midY, scale: 1.1 }}
-          className="absolute inset-0 z-10"
+          className="absolute z-10"
         >
           <img
             src={midImage}

@@ -3,14 +3,14 @@ import { cn } from '../../utils/cn';
 import { SectionHeader } from '../ui/section-header';
 
 const linkStyle =
-  'transition-opacity duration-300 not-md:underline underline-offset-4 font-vend-sans';
+  'transition-opacity duration-300 underline underline-offset-2 font-vend-sans';
 
 export function AboutSection({ translation: t }) {
   const [textDarkened, setTextDarkened] = useState('');
   const [currentLinkHovering, setCurrentLinkHovering] = useState(null);
 
   const darkenText = (e) => {
-    setTextDarkened('opacity-35 transition-opacity duration-300');
+    setTextDarkened('opacity-40 transition-opacity duration-300');
     setCurrentLinkHovering(e.target.text);
   };
 

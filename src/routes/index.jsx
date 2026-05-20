@@ -9,7 +9,7 @@ import { MobileMockups } from '../components/mobile-mockups';
 import { Link } from '@tanstack/react-router';
 import { translations } from '../i18n';
 import { cn } from '../utils/cn';
-import { useState } from 'react';
+import { useLanguage } from '../hooks/use-language';
 import { IconCornerDownRight } from '@tabler/icons-react';
 
 export const Route = createFileRoute('/')({
@@ -30,7 +30,7 @@ function SectionContainer({ children, className }) {
 }
 
 function RouteComponent() {
-  const [language, setLanguage] = useState('en'); // "en" ou "pt"
+  const [language, setLanguage] = useLanguage();
   const t = translations[language];
 
   return (
@@ -104,12 +104,12 @@ function RouteComponent() {
       <div className="bg-neutral-950 w-full relative pb-0">
         <Link to="/contact">
           <button className="whitespace-nowrap bg-lime-600 px-4 py-3 rounded-full absolute translate-y-[-12%] sm:translate-y-[-20%] z-10 left-1/2 translate-x-[-50%] flex items-center gap-2 cursor-pointer! hover:brightness-110 transition-all">
-            <IconCornerDownRight size={20} /> Let's work together
+            <IconCornerDownRight size={20} /> {t.sections.contact.CTA}
           </button>
         </Link>
 
-        {/* <CvFooter className="mt-28" /> */}
-        <div className="mx-16 not-md:mx-4 pt-28 pb-12 text-zinc-500 flex gap-1.5">
+        {/* Footer added to __root */}
+        {/* <div className="mx-16 not-md:mx-4 pt-28 pb-12 text-zinc-500 flex gap-1.5">
           <p>Copyright {new Date().getFullYear()}</p>
           <span>//</span>
           <Link
@@ -122,14 +122,8 @@ function RouteComponent() {
           <Link to="/faq" className="hover:text-zinc-100 transition-all">
             FAQ
           </Link>
-        </div>
+        </div> */}
       </div>
-
-      {/* <Divider /> */}
-
-      {/* <footer className="mx-16 not-md:mx-4 border-x border-[#FFFCF233] grow overflow-clip">
-        <div className="w-full max-w-48 aspect-3/1 mask-contain mask-no-repeat mask-exclude mask-[url(/sign.svg)] animate-sign mx-auto mt-8 mb-24"></div>
-      </footer> */}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export function ProjectBoard({ children }) {
       <a
         href="https://gallery.gabrielo.xyz"
         target="_blank"
-        className="cursor-pointer relative z-2 group transition-all"
+        className="cursor-pointer relative z-10 group transition-all"
       >
         <div className="rounded-3xl border border-zinc-700/80 bg-zinc-900 p-2 md:p-3">
           <img

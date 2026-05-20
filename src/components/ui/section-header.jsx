@@ -34,7 +34,7 @@ export function SectionHeader({ children, className }) {
           />
         </span>
 
-        <span className="font-mondwest text-3xl! ml-6 mt-3 text-[#CCC5B9] leading-none select-none">
+        <span className="font-mondwest text-3xl! ml-6 mt-3 text-[#CCC5B9] leading-none select-none whitespace-nowrap">
           {children}
         </span>
       </div>

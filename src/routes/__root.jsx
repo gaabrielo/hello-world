@@ -6,7 +6,7 @@ function RootComponent() {
   return (
     <React.Fragment>
       <Outlet />
-      {/* <footer className="px-16 not-md:px-4 pt-28 pb-12 text-zinc-500 flex gap-1.5 bg-zinc-950">
+      <footer className="px-16 not-md:px-4 pt-28 pb-12 text-zinc-500 flex gap-1.5 bg-zinc-950">
         <p>Copyright {new Date().getFullYear()}</p>
         <span>//</span>
         <Link
@@ -19,7 +19,7 @@ function RootComponent() {
         <Link to="/faq" className="hover:text-zinc-100 transition-all">
           FAQ
         </Link>
-      </footer> */}
+      </footer>
       {/* <TanStackRouterDevtools /> */}
     </React.Fragment>
   );

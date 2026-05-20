@@ -92,7 +92,13 @@ export function DockWidget() {
         </DockItem>
         <AnimatePresence mode="popLayout">
           {isScrollToTopVisible && (
-            <>
+            <motion.div
+              key="scroll-top-wrapper"
+              style={{ display: 'contents' }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
               <motion.div
                 layout
                 className="w-px h-[80%] bg-neutral-400 ml-1 rounded-px self-center"
@@ -132,7 +138,7 @@ export function DockWidget() {
                   <IconArrowUp className="flex items-center justify-center w-full h-full p-2" />
                 </DockItem>
               </motion.div>
-            </>
+            </motion.div>
           )}
         </AnimatePresence>
       </DockContainer>
